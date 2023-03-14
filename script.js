@@ -46,7 +46,7 @@ function displayTasks() {
     for (let i = 0; i < tasks.length; i++) {
         const li = document.createElement('li');
         const assignedPerson = people[i % people.length];
-        li.textContent = `${assignedPerson}: ${tasks[i].name} (${tasks[i].duration} minutes)`;
+        li.textContent = `${assignedPerson}: ${tasks[i].name} (${tasks[i].duration} hours)`;
         taskList.appendChild(li);
     }
 }
