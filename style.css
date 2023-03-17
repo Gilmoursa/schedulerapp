@@ -26,9 +26,28 @@ ul {
 
 li {
     margin-bottom: 10px;
-    color: #2196F3;
+    color: #E3F2FD;
+    font-weight: bold;
 }
-
+/* container styling */
+#people-container {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 1%;
+    background-color: #E0607E;
+    border: 3px solid #2196F3;
+    display: none;
+}
+#task-container {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 1%;
+    background-color: #D36060;
+    border: 3px solid #2196F3;
+    display: none;
+}
 /* form styling */
 form {
     width: 50%;

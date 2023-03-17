@@ -14,12 +14,22 @@ function setPeople(event) {
     const numPeople = parseInt(numPeopleInput.value.trim());
     if (numPeople && !isNaN(numPeople)) {
         people = [];
+        const peopleList = document.getElementById('people-list');
+        const peopleContainer = document.getElementById('people-container');
+        peopleList.innerHTML = '';
         for (let i = 1; i <= numPeople; i++) {
             const name = prompt(`Enter name for person ${i}:`);
             if (name) {
                 people.push(name.trim());
+                const li = document.createElement('li');
+                peopleContainer.style.display = 'block';
+                li.textContent = name.trim();
+                peopleList.appendChild(li);
             } else {
                 people.push(`Person ${i}`);
+                const li = document.createElement('li');
+                li.textContent = `Person ${i}`;
+                peopleList.appendChild(li);
             }
         }
     }
@@ -42,9 +52,11 @@ function addTask(event) {
 function displayTasks() {
     shuffle(people);
     const taskList = document.getElementById('task-list');
+    const taskContainer = document.getElementById('task-container');
     taskList.innerHTML = '';
     for (let i = 0; i < tasks.length; i++) {
         const li = document.createElement('li');
+        taskContainer.style.display = 'block';
         const assignedPerson = people[i % people.length];
         li.textContent = `${assignedPerson}: ${tasks[i].name} (${tasks[i].duration} hours)`;
         taskList.appendChild(li);
@@ -56,4 +68,3 @@ peopleForm.addEventListener('submit', setPeople);
 
 const taskForm = document.getElementById('task-form');
 taskForm.addEventListener('submit', addTask);
-
