@@ -1,19 +1,22 @@
-# schedulerapp
-testing out some ideas to make an app to assign people tasks 
+# Task Scheduler
 
+A browser-based tool for assigning tasks to people with automatic workload balancing.
 
-## How to Use
-1. choose the number of people you wish to schedule
-2. enter their names when prompted (you will be prompted to enter the number of names you chose in step 1)
-3. create a task by name and assign it a number of hours you expect it to take
-4. the app will list the name of the person performing the task beside the task name and how long it's estimated to take
+## How to use
 
-## Features to Implement
-### Phase 1
-- add weekly availability per scheduler
-- automatically balance the number of tasks (by hour) per scheduler
-- improve formatting of generated-schedule (list tasks beneath each scheduler)
+1. Add each person by name and set their available hours for the week
+2. Add tasks with a name and estimated duration in hours
+3. Tasks are automatically assigned to whoever has the most remaining capacity
+4. Check tasks off as they're completed — they free up the person's hours
 
-### Phase 2
-- save data to database so multiple schedulers can view the schedule from their browser
-- allow schedulers to mark tasks as completed (add strikethrough animation or grey-out text of completed task)
+## Features
+
+- **Workload-balanced assignment** — tasks go to the least-loaded person who still has capacity; falls back to least-loaded overall if everyone is over their limit
+- **Weekly availability** — set how many hours each person has this week; a capacity bar shows assigned vs. available at a glance
+- **Task completion** — check off tasks to strikethrough and dim them; unchecking restores them and returns the hours
+- **Delete people and tasks** — remove any row with the ✕ button; deleting a person automatically reassigns their tasks
+- **Persistent storage** — all data is saved to localStorage and survives a page refresh
+
+## Roadmap
+
+- Save data to a backend so multiple people can view and update the schedule from different devices
