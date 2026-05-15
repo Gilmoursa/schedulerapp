@@ -2,6 +2,8 @@
 
 A browser-based tool for assigning tasks to people with automatic workload balancing.
 
+**[Try it live](https://gilmoursa.github.io/schedulerapp/)**
+
 ## How to use
 
 1. Add each person by name and set their available hours for the week
