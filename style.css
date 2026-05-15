@@ -8,13 +8,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #E3F2FD;
+    background-color: #F3F6F8;
 }
 
 /* header styling */
 h1 {
     text-align: center;
-    color: #2196F3;
+    color: #0087BE;
     padding: 20px 0 10px;
 }
 
@@ -30,7 +30,7 @@ li {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    color: #E3F2FD;
+    color: #FFFFFF;
     font-weight: bold;
     flex-wrap: wrap;
 }
@@ -50,8 +50,8 @@ li.completed input[type="checkbox"] {
     margin: 20px auto;
     border-radius: 20px;
     padding: 4%;
-    background-color: #E0607E;
-    border: 3px solid #2196F3;
+    background-color: #0087BE;
+    border: 3px solid #005082;
     display: none;
 }
 
@@ -60,8 +60,8 @@ li.completed input[type="checkbox"] {
     margin: 20px auto;
     border-radius: 20px;
     padding: 4%;
-    background-color: #D36060;
-    border: 3px solid #2196F3;
+    background-color: #2E4453;
+    border: 3px solid #005082;
     display: none;
 }
 
@@ -78,13 +78,13 @@ form {
 }
 
 #people-form {
-    background-color: #E0607E;
-    border: 3px solid #2196F3;
+    background-color: #0087BE;
+    border: 3px solid #005082;
 }
 
 #task-form {
-    background-color: #D36060;
-    border: 3px solid #2196F3;
+    background-color: #2E4453;
+    border: 3px solid #005082;
 }
 
 label,
@@ -104,7 +104,7 @@ input[type="number"] {
 
 button[type="submit"] {
     margin-top: 10px;
-    background-color: #2196F3;
+    background-color: #0087BE;
     color: white;
     border: 1px solid #000;
     padding: 10px 20px;
@@ -114,7 +114,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #1976D2;
+    background-color: #005082;
 }
 
 /* delete button */
@@ -166,13 +166,13 @@ button[type="submit"]:hover {
 
 .capacity-fill {
     height: 100%;
-    background: rgba(255,255,255,0.8);
+    background: #4AB866;
     border-radius: 3px;
     transition: width 0.3s ease;
 }
 
 .capacity-fill.full {
-    background: #ffeb3b;
+    background: #D54E21;
 }
 
 /* task row */
@@ -187,7 +187,7 @@ input[type="checkbox"] {
     flex-shrink: 0;
     cursor: pointer;
     margin-bottom: 0;
-    accent-color: #2196F3;
+    accent-color: #0087BE;
 }
 
 /* clear all button */
