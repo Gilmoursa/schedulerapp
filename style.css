@@ -93,6 +93,13 @@ input {
     width: 100%;
 }
 
+#task-form label,
+#task-container .task-info,
+#task-container .person-name,
+#task-container .person-hours {
+    color: #78DCFA;
+}
+
 input[type="text"],
 input[type="number"] {
     padding: 6px 10px;
